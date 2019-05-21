@@ -1,0 +1,94 @@
+
+
+.report{
+    font-family: "Comic Sans MS";
+}
+
+#summary{
+	background-color: gray;
+}
+
+.report td{
+    width: 300px;
+    background-color: #4dc71f;
+}
+
+.selected-report{
+    background-color: lightcyan;
+}
+
+.graph{
+	width: 200px;
+	height: 200px;
+    margin: 15px;
+}
+
+
+
+.graph:hover{
+	cursor: pointer;
+	border: 2px solid red;
+}
+
+
+.table_cell{
+	background-color: #6AB5E1;
+}
+.table_style{
+	width: 400px;
+	height: 100px;
+	padding: 8px;
+}
+.table_general{
+	background-color: #8C2A9E;
+}
+.table_medication{
+	background-color: #30B1AE;
+}
+.table_allergy{
+	background-color: #1F39A2;
+}
+.table_current{
+	background-color: #cc79af;
+}
+.previous_appt{
+	background-color: #AAAAAA;
+}
+.header{
+	background-color: #12E456;
+}
+.section_name{
+	background-color: #A312E9;
+	align: center;
+	text-align: center;
+}
+.sub_table{
+	display: block;
+	height: 200px;
+	max-height: 200px;
+	overflow-y: scroll;
+}
+.field_row_desc{
+	width: 140px;
+	max-width: 140px;
+	text-align: left;
+}
+.field_value_other{
+		width: 350px;
+		max-width: 350px;
+		text-align: left;
+}
+.sum_label{
+	text-align: left;
+}
+.graph{
+	background-color: cyan;
+}
+
+.report-history{
+    width: 300px;
+}
+
+.report-history td{
+    background-color: #6AB5E1;
+}

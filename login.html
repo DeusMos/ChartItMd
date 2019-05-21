@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <!--
+    VERY IMPORTANT to include this in all web pages for application security.
+
+    * These rules limit stuff to coming from within electron: css, js, etc.
+    * Scripts can connect only to itself, localhost, or our website to get json
+      etc.
+     -->
+    <meta
+            content="connect-src 'self' http://localhost/ https://www.chartitmd.com/; script-src 'self' http://localhost/; default-src 'self'"
+            http-equiv="Content-Security-Policy"/>
+    <title>Patient</title>
+    <link href="../assets/css/normalize.css" rel="stylesheet"/>
+    <link href="../assets/css/main.css" rel="stylesheet"/>
+</head>
+<body>
+<header>
+    <picture>
+        <source class="banner"
+                media="(min-width: 350px)"
+                sizes="98vw"
+                srcset="../assets/image/chart_it_md_header.svg 1600w,../assets/image/chart_it_md_header.svg 1200w,../assets/image/chart_it_md_header.svg 960w,../assets/image/chart_it_md_header.svg 800w,../assets/image/chart_it_md_header.svg 600w"
+                type="image/svg-xml">
+        <img
+                alt="Chart It MD banner heading with chart and laptop graphics on left and right of name and heart beat like green trace in background over a blue to purple linear gradient"
+                class="banner"
+                sizes="98vw"
+                src="../assets/image/chart_it_md_header_960.png"
+                srcset="../assets/image/chart_it_md_header_1600.png 1600w,../assets/image/chart_it_md_header_1200.png 1200w,../assets/image/chart_it_md_header_960.png 960w,../assets/image/chart_it_md_header_800.png 800w,../assets/image/chart_it_md_header_600.png 600w">
+    </picture>
+</header>
+<main>
+    <div align="center">
+            <label>Username: </label><input id="userLog" type="text" name="user-name" autofocus><br><br>
+            <label>Password: </label><input id="passLog" type="password" name="pass-word"><br><br>
+            <input type="button" value="Login" id="tryLogin" onclick="attemptLogin()">
+        <br>
+    </div>
+</main>
+<script src="login.js"></script>
+</body>
+</html>
