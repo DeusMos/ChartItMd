@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--
+    VERY IMPORTANT to include this in all web pages for application security.
+
+    * These rules limit stuff to coming from within electron: css, js, etc.
+    * Scripts can connect only to itself, localhost, or our website to get json
+      etc.
+     -->
+    <meta content="connect-src 'self' http://localhost/ https://www.chartItMD.com/; default-src 'self'"
+          http-equiv="Content-Security-Policy">
+    <title>About ChartItMD</title>
+    <link href="../assets/css/normalize.css" rel="stylesheet">
+    <link href="../assets/css/main.css" rel="stylesheet">
+</head>
+<body>
+<header>
+    <h1>ChartItMD</h1>
+    <h3>Charting the future of health care</h3>
+</header>
+<br>
+<br>
+<main>
+    <section>
+        <h2>Member of the ChartItMD Development Group:</h2>
+        <ul>
+            <li>Alec Aichele</li>
+            <li>Michael Cummings</li>
+            <li>James Wood</li>
+        </ul>
+    </section>
+    <br>
+    <section>
+        <h3>Technologies used:</h3>
+        <ul>
+            <li>
+                <a href="https://electronjs.org">Electron</a> - Copyright &copy; 2013-2018 GitHub Inc.
+            </li>
+        </ul>
+    </section>
+</main>
+<br><br>
+<footer>
+    <p>MIT license</p>
+    <p>Copyright &copy; 2019 ChartItMD Development Group</p>
+</footer>
+<script src="about.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <!--
+    VERY IMPORTANT to include this in all web pages for application security.
+
+    * These rules limit stuff to coming from within electron: css, js, etc.
+    * Scripts can connect only to itself, localhost, or our website to get json
+      etc.
+     -->
+    <meta
+            content="connect-src 'self' http://localhost/ https://www.chartitmd.com/; script-src 'self' http://localhost/; default-src 'self'"
+            http-equiv="Content-Security-Policy"/>
+    <title>Settings page</title>
+    <link href="../assets/css/normalize.css" rel="stylesheet"/>
+    <link href="../assets/css/main.css" rel="stylesheet"/>
+</head>
+<body>
+    <main>
+        <div align="center">
+            <input id="TextColor" type="color" name="text-color" onchange="updatePreview()"> Text color
+            <br>
+            <input id="BgColor" type="color" name="background-color" onchange="updatePreview()" value="#FFFFFF"> Background color
+            <br>
+                <button id="colorBlindOptions">WIP Color Blind Options WIP</button>
+            <br>
+            <div>
+                <label id="preview">Preview Text</label>
+            </div>
+
+            <input type="button" value="Apply" id="ApplyChanges" onclick="applyChanges()">
+            <input type="button" value="Reset" id="RevertChanges" onclick="resetValues()">
+            <button id="cancel" onclick="cancelChanges()">Cancel</button>
+        </div>
+    </main>
+    <aside>
+        <input type="checkbox" id="display-age">Age<br>
+        <input type="checkbox" id="display-gender">Gender<br>
+        <input type="checkbox" id="display-height">Height<br>
+        <input type="checkbox" id="display-weight">Weight<br>
+    </aside>
+<script src="settings.js"></script>
+</body>
+</html>
