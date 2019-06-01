@@ -1,0 +1,688 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="be9dc740-1c58-4126-a2ea-38a09ab31042" name="Default Changelist" comment="added the ability to add a new prescrition to the database useing a modal dialog like the one from the vitals.">
+      <change afterPath="$PROJECT_DIR$/MedicationAdmin.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NewPrescription.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admission.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admission.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsentForms.php" beforeDir="false" afterPath="$PROJECT_DIR$/ConsentForms.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DoctorsNotes.php" beforeDir="false" afterPath="$PROJECT_DIR$/DoctorsNotes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LabReports.php" beforeDir="false" afterPath="$PROJECT_DIR$/LabReports.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Medications.php" beforeDir="false" afterPath="$PROJECT_DIR$/Medications.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NursesNotes.php" beforeDir="false" afterPath="$PROJECT_DIR$/NursesNotes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Orders.php" beforeDir="false" afterPath="$PROJECT_DIR$/Orders.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PatientIDBar.php" beforeDir="false" afterPath="$PROJECT_DIR$/PatientIDBar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PatientLookup.html" beforeDir="false" afterPath="$PROJECT_DIR$/PatientLookup.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PatientLookup.php" beforeDir="false" afterPath="$PROJECT_DIR$/PatientLookup.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SetPatient.php" beforeDir="false" afterPath="$PROJECT_DIR$/SetPatient.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/about.php" beforeDir="false" afterPath="$PROJECT_DIR$/about.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/add_vhost.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/banner.html" beforeDir="false" afterPath="$PROJECT_DIR$/banner.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loginretry.html" beforeDir="false" afterPath="$PROJECT_DIR$/loginretry.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/measurementInputpage.php" beforeDir="false" afterPath="$PROJECT_DIR$/measurementInputpage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/navbar.php" beforeDir="false" afterPath="$PROJECT_DIR$/navbar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/session.php" beforeDir="false" afterPath="$PROJECT_DIR$/session.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.html" beforeDir="false" afterPath="$PROJECT_DIR$/settings.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.php" beforeDir="false" afterPath="$PROJECT_DIR$/settings.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testmysql.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wampindex.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wamplangues/add_vhost_czech.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wamplangues/add_vhost_english.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wamplangues/add_vhost_french.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wamplangues/add_vhost_hellenic.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wamplangues/add_vhost_macedonian.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wamplangues/add_vhost_portuguese.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wamplangues/add_vhost_romanian.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wamplangues/add_vhost_turkish.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wamplangues/index_czech.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wamplangues/index_english.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wamplangues/index_french.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wamplangues/index_hellenic.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wamplangues/index_macedonian.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wamplangues/index_portuguese.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wamplangues/index_romanian.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wamplangues/index_turkish.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wampthemes/classic/img/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wampthemes/classic/img/favicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wampthemes/classic/img/gifLogo.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wampthemes/classic/img/gifLogo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wampthemes/classic/img/pngFolder.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wampthemes/classic/img/pngFolderGo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wampthemes/classic/img/pngPlugin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wampthemes/classic/img/pngWrench.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wampthemes/classic/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wampthemes/modern/fonts/generator_config.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wampthemes/modern/fonts/rationale-regular-demo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wampthemes/modern/fonts/rationale-regular-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wampthemes/modern/fonts/rationale-regular-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wampthemes/modern/fonts/rationale-regular-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wampthemes/modern/fonts/rationale-regular-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wampthemes/modern/fonts/rationale-regular-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wampthemes/modern/fonts/specimen_files/easytabs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wampthemes/modern/fonts/specimen_files/grid_12-825-55-15.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wampthemes/modern/fonts/specimen_files/specimen_stylesheet.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wampthemes/modern/fonts/stylesheet.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wampthemes/modern/fonts/webfontkit-20150426-043002.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wampthemes/modern/img/bg-begin-repeat.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wampthemes/modern/img/bg-dl-repeat.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wampthemes/modern/img/bg-header.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wampthemes/modern/img/bg-title-dark.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wampthemes/modern/img/bg-wall-repeat.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wampthemes/modern/img/divider.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wampthemes/modern/img/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wampthemes/modern/img/pngFolder.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wampthemes/modern/img/pngFolderGo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wampthemes/modern/img/pngPlugin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wampthemes/modern/img/pngWrench.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wampthemes/modern/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wampthemes/no-style/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wampthemes/simple/style.css" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/chartitmd$PatientLookup_php.dat" NAME="PatientLookup.php Coverage Results" MODIFIED="1558481785125" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="WipCoverageRunner" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="DockManager">
+    <window id="2">
+      <content type="file-editors">
+        <state>
+          <leaf>
+            <file pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/measurementInputpage.php">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="-379">
+                    <caret line="37" column="30" selection-start-line="37" selection-start-column="30" selection-end-line="37" selection-end-column="30" />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
+    <window id="1">
+      <content type="file-editors">
+        <state>
+          <leaf>
+            <file pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/PatientIDBar.php">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="316">
+                    <caret line="29" column="21" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+            <file pinned="false" current-in-tab="false">
+              <entry file="file://$PROJECT_DIR$/PatientLookup.php">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="85">
+                    <caret line="5" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="22" selection-start-line="22" selection-end-line="22" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/NewPrescription.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="427">
+              <caret line="103" column="38" selection-start-line="103" selection-start-column="38" selection-end-line="103" selection-end-column="38" />
+              <folding>
+                <element signature="e#330#337#1" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MedicationAdmin.php">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/loginretry.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="663">
+              <caret line="39" column="12" selection-start-line="39" selection-start-column="12" selection-end-line="39" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Medications.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-5">
+              <caret line="60" column="38" selection-start-line="60" selection-start-column="38" selection-end-line="60" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/8431b1fa-a500-4002-b30e-e06cf402df36/console.sql">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/login.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/login.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="595">
+              <caret line="40" column="8" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/summary.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PatientLookup.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" selection-start-line="7" selection-end-line="11" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>border</find>
+      <find>$_SESSION</find>
+      <find>mymodsa</find>
+      <find>Measurement</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>Prescription</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/database_error.php" />
+        <option value="$PROJECT_DIR$/DBConnection.php" />
+        <option value="$PROJECT_DIR$/Patient.php" />
+        <option value="$PROJECT_DIR$/main.css" />
+        <option value="$PROJECT_DIR$/MeasurementInput.php" />
+        <option value="$PROJECT_DIR$/measurementInputpage.php" />
+        <option value="$PROJECT_DIR$/session.php" />
+        <option value="$PROJECT_DIR$/PatientLookup.html" />
+        <option value="$PROJECT_DIR$/SetPatient.php" />
+        <option value="$PROJECT_DIR$/banner.html" />
+        <option value="$PROJECT_DIR$/PatientLookup.php" />
+        <option value="$PROJECT_DIR$/about.html" />
+        <option value="$PROJECT_DIR$/settings.html" />
+        <option value="$PROJECT_DIR$/Orders.php" />
+        <option value="$PROJECT_DIR$/LabReports.php" />
+        <option value="$PROJECT_DIR$/Admission.php" />
+        <option value="$PROJECT_DIR$/DoctorsNotes.php" />
+        <option value="$PROJECT_DIR$/NursesNotes.php" />
+        <option value="$PROJECT_DIR$/ConsentForms.php" />
+        <option value="$PROJECT_DIR$/settings.php" />
+        <option value="$PROJECT_DIR$/about.php" />
+        <option value="$PROJECT_DIR$/login.html" />
+        <option value="$PROJECT_DIR$/loginretry.html" />
+        <option value="$PROJECT_DIR$/navbar.php" />
+        <option value="$PROJECT_DIR$/PatientIDBar.php" />
+        <option value="$PROJECT_DIR$/summary.html" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/login.php" />
+        <option value="$PROJECT_DIR$/Medications.php" />
+        <option value="$PROJECT_DIR$/NewPrescription.php" />
+      </list>
+    </option>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.3" />
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/dataSources.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="1909" />
+    <option name="width" value="1940" />
+    <option name="height" value="2111" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="chartitmd" type="b2602c69:ProjectViewProjectNode" />
+              <item name="chartitmd" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="C:/Programmin/ChartItMD" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.composer" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\chartitmd" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.PatientLookup.php">
+    <configuration name="PatientLookup.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/chartitmd/PatientLookup.php" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="measurementInputpage.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/measurementInputpage.php">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.PatientLookup.php" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="be9dc740-1c58-4126-a2ea-38a09ab31042" name="Default Changelist" comment="" />
+      <created>1550364165102</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1550364165102</updated>
+      <workItem from="1550364166246" duration="15253000" />
+      <workItem from="1551135522827" duration="1213000" />
+      <workItem from="1552260326392" duration="21768000" />
+      <workItem from="1558398818720" duration="738000" />
+      <workItem from="1558478219859" duration="16340000" />
+      <workItem from="1559334469787" duration="832000" />
+      <workItem from="1559336040611" duration="275000" />
+      <workItem from="1559336577137" duration="708000" />
+      <workItem from="1559337978449" duration="385000" />
+      <workItem from="1559338381822" duration="913000" />
+      <workItem from="1559341460447" duration="9853000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="68829000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="1273" y="0" width="1293" height="1407" extended-state="0" />
+    <layout>
+      <window_info id="Favorites" order="0" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.17112733" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info active="true" anchor="bottom" id="Messages" visible="true" weight="0.3298722" />
+      <window_info anchor="bottom" id="PHP-CGI Server" order="0" />
+      <window_info anchor="bottom" id="Terminal" order="1" weight="0.24840255" />
+      <window_info anchor="bottom" id="Database Changes" order="2" />
+      <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="4" />
+      <window_info anchor="bottom" id="Docker" order="5" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Message" order="6" />
+      <window_info anchor="bottom" id="Find" order="7" />
+      <window_info anchor="bottom" id="Run" order="8" weight="0.32667732" />
+      <window_info anchor="bottom" id="Debug" order="9" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="12" />
+      <window_info anchor="right" id="Coverage" order="0" side_tool="true" weight="0.1273317" />
+      <window_info anchor="right" id="Database" order="1" visible="true" weight="0.32927817" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="2" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="3" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="4" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.php" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added the ability to add a new prescrition to the database useing a modal dialog like the one from the vitals." />
+    <option name="LAST_COMMIT_MESSAGE" value="added the ability to add a new prescrition to the database useing a modal dialog like the one from the vitals." />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/testmysql.php" />
+    <entry file="file://$PROJECT_DIR$/wampindex.php" />
+    <entry file="file://$PROJECT_DIR$/MeasurementInput.php" />
+    <entry file="file://$PROJECT_DIR$/../assets/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-873">
+          <caret line="163" column="10" selection-start-line="163" selection-start-column="4" selection-end-line="163" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_sockets.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database_error.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1241">
+          <caret line="73" selection-start-line="73" selection-end-line="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/session.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="22" column="13" lean-forward="true" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DBConnection.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SetPatient.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Patient.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="34" column="43" lean-forward="true" selection-start-line="30" selection-start-column="8" selection-end-line="34" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/summery.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/settings.js" />
+    <entry file="file://$PROJECT_DIR$/Orders.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="7" selection-end-line="36" selection-end-column="7" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LabReports.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Admission.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DoctorsNotes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/navbar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="32" column="14" selection-start-line="32" selection-start-column="14" selection-end-line="32" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/banner.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="14" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/settings.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" selection-start-line="4" selection-end-line="25" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NursesNotes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="7" selection-end-line="8" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ConsentForms.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="7" selection-end-line="36" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/about.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="901">
+          <caret line="53" column="7" selection-start-line="2" selection-end-line="53" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/settings.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/about.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="36" column="7" selection-start-line="36" selection-start-column="7" selection-end-line="36" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/loginretry.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="39" column="12" selection-start-line="39" selection-start-column="12" selection-end-line="39" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PatientLookup.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="7" selection-end-line="11" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PatientLookup.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PatientIDBar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="29" column="21" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/summary.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" selection-start-line="22" selection-end-line="22" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/measurementInputpage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-379">
+          <caret line="37" column="30" selection-start-line="37" selection-start-column="30" selection-end-line="37" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="40" column="8" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MedicationAdmin.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Medications.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5">
+          <caret line="60" column="38" selection-start-line="60" selection-start-column="38" selection-end-line="60" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/8431b1fa-a500-4002-b30e-e06cf402df36/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NewPrescription.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="427">
+          <caret line="103" column="38" selection-start-line="103" selection-start-column="38" selection-end-line="103" selection-end-column="38" />
+          <folding>
+            <element signature="e#330#337#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

@@ -2,22 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <!--
-    VERY IMPORTANT to include this in all web pages for application security.
 
-    * These rules limit stuff to coming from within electron: css, js, etc.
-    * Scripts can connect only to itself, localhost, or our website to get json
-      etc.
-     -->
-    <meta
-        content="connect-src 'self' http://localhost/ https://www.chartitmd.com/; script-src 'self' 'unsafe-inline' http://localhost/; default-src 'self'"
-        http-equiv="Content-Security-Policy">
-    <title>Patient summary</title>
-    <link href="style.css" rel="stylesheet"/>
-    <!--
-    <link href="assets/css/normalize.css" rel="stylesheet">
-    <link href="assets/css/main.css" rel="stylesheet">
-    -->
     <script src="../assets/js/jquery.min.js"></script>
 </head>
 <body id="pageBody">
@@ -42,9 +27,7 @@ Use jquery
     <div w3-include-html="patient.html"></div>
 -->
 <h1>Patient Summary</h1>
-<a href="settings.html">Settings</a>
-<a href="patient.html">Patient</a>
-<a href="vitalSigns.html">VitalSigns</a>
+
 <main>
     <button id="save">Save</button>
     <table id="summary">

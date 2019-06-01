@@ -1,6 +1,7 @@
 <?php
 require_once  'DBConnection.php';
-$patientid = 1;
+
+$patientid = $_SESSION['activePatientID'];
 
 
 $query = 'SELECT patient_id, patient_firstname,
@@ -39,7 +40,14 @@ $statement->closeCursor();
             <td> <?php echo $returned[0]['patient_lastname']; ?></td>
             <td> <?php echo $returned[0]['patient_firstname']; ?></td>
             <td> <?php echo $returned[0]['patient_dob']; ?></td>
-            <td> age</td>
+            <td> <?php
+                $birthDate = explode("-",$returned[0]['patient_dob']);
+
+                $Age = (date("md", date("U", mktime(0, 0, 0, $birthDate[2], $birthDate[1], $birthDate[0]))) > date("md")
+                    ? ((date("Y") - $birthDate[0]) - 1)
+                    : (date("Y") - $birthDate[0]));
+                echo $Age;
+                ?></td>
             <td> <?php echo $returned[0]['gender_id']; ?></td>
             <td> <?php echo $returned[0]['patient_id']; ?></td>
 
