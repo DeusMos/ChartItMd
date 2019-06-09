@@ -13,16 +13,17 @@ $query = 'SELECT * FROM medications WHERE 1';
 $statement = $db->prepare($query);
 $statement->execute();
 $types = $statement->fetchAll();
+
 $statement->closeCursor();
 echo(' <script type="text/javascript">
         var med_type = "";
-        var GenericName = "";
-        var Dose = "";
+        var med_id = "";
+        var dose = "";
 
         function saveTextBoxes() {
             med_type = $("#med_type").val();
-            value = $("#value").val();
-            unit = $("#unit").val();
+            med_id = $("#med_id").val();
+            dose = $("#dose").val();
         }
 
         function alertSavedValues() {
@@ -31,7 +32,7 @@ echo(' <script type="text/javascript">
         function valueSelected(selection){
             if (selection.value != "0"){
             //alert("called");
-            document.getElementById(\'GenericName\').disabled = false;
+            document.getElementById(\'med_id\').disabled = false;
             document.getElementById(\'med_dose\').disabled = false;
             document.getElementById(\'med_dose\').value = types[selection.value-1][3];
             }
@@ -54,17 +55,20 @@ echo('<div class="modal fade" id="NewPrescriptionModal" tabindex="-1" role="dial
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                     <h4 class="modal-title" id="myModalLabel"> Prescription Input Form</h4>
-                </div>
+                </div> 
+                <form action="InsertPrescription.php" method="post">
                 <div class="modal-body">
                 <div class="container-fluid">
+                   
                     <div class="row">
-                    Type <select id ="med_type" name="med_type" onchange="valueSelected(this);">
+                    
+                    Type <select id="med_type" name="med_type" onchange="valueSelected(this);">
                     
                     <option value="0">Select a type</option>');
 echo('<script> types = [];</script>');
 foreach ($types as &$type) {
     echo('<option value="' .
-        $type["id"] .
+        $type["med_id"] .
         '" >' .
         $type["med_type"] .
         '</option> ');
@@ -81,7 +85,7 @@ echo('</select>
                     
                     <div class="row">
                     
-                    Generic <select  id="GenericName" disabled> 
+                    Generic <select  id="med_id" name="med_id" disabled> 
                     <option value="0">Select a type</option>\');
                     
                     
@@ -89,7 +93,7 @@ echo('</select>
                     ');
 foreach ($types as $type)
     echo('<option value="' .
-        $type["id"] .
+        $type["med_id"] .
         '" >' .
         $type["med_chemname"] .
         '</option> ');
@@ -101,15 +105,17 @@ echo('<script> types.push(["'.
     '"])</script>');
 
 echo('</select>
-                    Dose <input type="textbox" id="med_dose" disabled> 
+                    Dose <input type="textbox" name="med_dose" id="med_dose" disabled> 
                     </div>
+                    
                 </div>
                 </div>
                 
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary" onclick="saveTextBoxes()">Save changes</button>
+                    <button type="submit" class="btn btn-primary" >Save changes</button>
                 </div>
+                </form>
             </div><!-- /.modal-content -->
         </div><!-- /.modal-dialog -->
     </div><!-- /.modal -->');
