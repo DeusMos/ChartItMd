@@ -41,13 +41,23 @@ $patientId = $_SESSION['activePatientID'];
                 <td>Administer</td>
             </tr>
             <?php
-            $query = 'SELECT medications.med_id, med_chemname as cname , med_brandname as bname, med_type, script_dose, time_taken, prescriptions.script_id as id
+            $query = 'SELECT medications.med_id, med_chemname as cname , med_brandname as bname, med_type, script_dose, ma.lasttime as time_taken, prescriptions.script_id as id
 FROM medications 
 INNER JOIN prescriptions 
 on medications.med_id = prescriptions.med_id
-INNER JOIN medication_administration
-ON medication_administration.patient_id = prescriptions.patient_id
-WHERE prescriptions.patient_id = :patient_id';
+INNER JOIN (
+  SELECT max(time_taken) as lasttime, script_id, patient_id, time_taken
+  FROM medication_administration
+  WHERE medication_administration.patient_id = :patient_id
+  GROUP BY script_id
+) as ma
+ON ma.patient_id = prescriptions.patient_id
+
+WHERE prescriptions.patient_id = :patient_id
+
+GROUP BY prescriptions.script_id
+
+';
 
             $statement = $db->prepare($query);
 
@@ -74,7 +84,8 @@ WHERE prescriptions.patient_id = :patient_id';
                 echo $item['med_type'];
                 echo '</td><td>';
                 echo $item['script_dose'];
-                '<input name="script_dose" hidden value="';
+                echo '<input name="script_dose" hidden value="';
+
                 echo $item['script_dose'];
                 echo '">';
                 echo '</td>';
