@@ -15,6 +15,7 @@
         <li><a href="ConsentForms.php">Consent Forms</a> </li>
         <li><a href="settings.php">Settings</a></li>
         <li><a href="about.php"> About</a></li>
+		 <li><a href="patientContact.html"> Patient Contact</a></li>
     </ul>
 </div>
 </html>
