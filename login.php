@@ -16,7 +16,7 @@ $myusername = $_POST['username'];
 $mypassword = $_POST['password'];
 var_dump($mypassword);
 var_dump($myusername);
-$sql = "SELECT user_type FROM users WHERE user_name = :username and user_password = :userpassword";
+$sql = "SELECT user_type, user_id FROM users WHERE user_name = :username and user_password = :userpassword";
 
 $statement = $db->prepare($sql);
 
@@ -36,7 +36,8 @@ var_dump($returned);
 if (count($returned) == 1) {
 
     $_SESSION['login_user'] = $myusername;
-    $_SESSION['user_type'] =  $returned;
+    $_SESSION['user_type'] =  $returned[0]['user_type'];
+    $_SESSION['user_id'] =  $returned[0]['user_id'];
     header("location: PatientLookup.php");
 } else {
     $error = "Your Login Name or Password is invalid";
