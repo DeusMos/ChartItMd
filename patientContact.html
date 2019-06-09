@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--
+VERY IMPORTANT to include this in all web pages for application security.
+
+* These rules limit stuff to coming from within electron: css, js, etc.
+* Scripts can connect only to itself, localhost, or our website to get json
+  etc.
+ -->
+    <meta
+            content="connect-src 'self' http://localhost/ https://www.chartitmd.com/; script-src 'self' http://localhost/; default-src 'self'"
+            http-equiv="Content-Security-Policy"/>
+    <title>Title</title>
+</head>
+<body>
+
+
+<div>
+<form action="patientContact.php" method="post">
+    <table>
+        <tr>
+            <td>First name</td>
+            <td>
+                <label id="patient-firstName-item">
+                    <input id="patient-firstName" name="patient-firstName" readonly required type="text"/>
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <td>Last name</td>
+            <td>
+                <label id="patient-lastName-item">
+                    <input id="patient-lastName" name="patient-lastName" readonly required type="text"/>
+                </label>
+            </td>
+        </tr>
+			<tr>
+				<td>Address 1:</td>
+				<td><input type="text" name="address1" id="address1" value="Street Address" disabled></td>
+			</tr>
+			<tr>
+				<td>Address 2:</td>
+				<td><input type="text" name="address2" id="address2" value="Appartment Address" disabled></td>
+			</tr>
+			<tr>
+				<td>Phone number</td>
+				<td><input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" id="phone" value="123-456-7890" disabled></td>
+			</tr>
+			<tr>
+				<td>Email</td>
+				<td><input type="email" name="email" id="email" value="email@website.com" disabled></td>
+			</tr>
+		
+    </table>
+
+	<input type="submit" id="saveAll" value="Save">
+</form>
+<button id="editAll">Edit</button>
+</div>
+<script src="patientContact.js"></script>
+</body>
+</html>
