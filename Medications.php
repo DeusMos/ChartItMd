@@ -41,13 +41,13 @@ $patientId = $_SESSION['activePatientID'];
                 <td>Administer</td>
             </tr>
             <?php
-            $query = 'SELECT medications.med_id, med_chemname as cname , med_brandname as bname, med_type, script_dose, time_taken, script_id as id
+            $query = 'SELECT medications.med_id, med_chemname as cname , med_brandname as bname, med_type, script_dose, time_taken, prescriptions.script_id as id
 FROM medications 
 INNER JOIN prescriptions 
 on medications.med_id = prescriptions.med_id
 INNER JOIN medication_administration
 ON medication_administration.patient_id = prescriptions.patient_id
-WHERE prescriptions.patient_id = 2';
+WHERE prescriptions.patient_id = :patient_id';
 
             $statement = $db->prepare($query);
 
@@ -74,9 +74,15 @@ WHERE prescriptions.patient_id = 2';
                 echo $item['med_type'];
                 echo '</td><td>';
                 echo $item['script_dose'];
+                '<input name="script_dose" hidden value="';
+                echo $item['script_dose'];
+                echo '">';
                 echo '</td>';
                 echo '<td>';
                 echo $item['time_taken'];
+                echo '<input name="script_id" hidden value="';
+                echo $item['id'];
+                echo '">';
                 echo '</td>';
                 echo '<td>';
                 echo ' <button type = "submit" name="id"value= "';
