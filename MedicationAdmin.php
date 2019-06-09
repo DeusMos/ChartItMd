@@ -8,20 +8,22 @@ if($_POST) {
     $userId = $_SESSION['user_id'];
 
 
-    $med_id = $_POST['script_id'];
-    $med_dose = $_POST['med_dose'];
+    $script_id = $_POST['script_id'];
+    $script_dose = $_POST['script_dose'];
     $statement = $db->prepare("
-INSERT INTO `medication_administration` (`admin`, `patient_id`, `med_id`, `user_id`, `script_dose`)
- VALUES (NULL, :patientId, :med_id, :user_id, :med_dose)
+INSERT INTO `medication_administration` (`admin_id`, `patient_id`, `user_id`, `script_id`, `time_taken`,  `dose`)
+ VALUES (NULL, :patientId, :user_id, :script_id, now(), :script_dose)
 ");
     $statement->bindValue(':patientId', $patientId);
-    $statement->bindValue(':med_id', $med_id);
     $statement->bindValue(':user_id', $userId);
-    $statement->bindValue(':med_dose', $med_dose);
+    $statement->bindValue(':script_id', $script_id);
+
+    $statement->bindValue(':script_dose', $script_dose);
     $statement->execute();
 
 
 
     $statement->closeCursor();
+    header("location: Medications.php");
 }
 
