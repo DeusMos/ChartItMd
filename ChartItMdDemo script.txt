@@ -1,0 +1,188 @@
+﻿Alec ; walks up to counter and says “i'm here for my appointment.”
+
+
+James; “yes sir, I just need your date of birth to look you up in the computer” 
+
+
+Alec; “sep 16 1998”
+
+
+james : types that into the search box. A list of patients with that birthday appears sorted by most recent appointment date so that Alec is at the top.
+
+
+James: “Alec Aichele?”
+
+
+Alec ; “Thats me.”
+
+
+James; selects Alec from the patient list, and Alec’s contact info appears in a modal
+
+
+James:  “are you still at address?”
+
+
+Alec: “no I moved to new address”
+
+James: “okay I will update that for you”
+
+
+James: “ have you change your phone number?”
+
+Alec: “ No same number for 10 years :D”
+
+
+James: “ would you like to update any of your emergency contacts if they also moved.”
+
+
+Alec: “No they are the same.
+
+James: “ okay well I have you all checked in. would you please have a seat.”
+
+
+Alec:” Sure”
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Mike: “Alec could you please come this way?” leads Alec to exam room “Could you please confirm your birthday.
+
+
+Alec; “sep 16 1998”
+
+
+Mike: Types that into the search box. A list of patients with that birthday appears sorted by most recent appointment date so that Alec is at the top. Selects Alec from the list, and  a visit summary appears. With a drop down box selected that asks the reason for the visit.
+
+Mike “ What brings you into the office today?”
+
+
+Alec; “My right ear hurts and I can’t hear well“
+
+Mike: selects New ailment from the drop down and enters “Patient complained of pain in the right ear as well as decreased hearing.”
+
+Mike: “No problem let me just get your vitals.”
+
+Alec: “umm okay”
+
+
+Mike: checks Alecs temp and enters it.
+
+
+Mike: checks Alecs heart rate and enters it.
+
+
+Mike: checks Alecs blood pressure and enters it.
+
+Mike: “The doctor will be with you in just a min.”
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+James: “Hello, I am Dr Wood. My nurse tells me you have an earache?”
+
+
+Alec:” yah it hurts really bad, and I can’t hear out of it.
+
+James: “well first things first I need you to confirm your birth date?”
+
+
+Alec; “sep 16 1998”
+
+
+James : types that into the search box. A list of patients with that birthday appears sorted by most recent appointment date so that Alec is at the top.
+
+James; “Okay I found you. Let's take a look at that ear.”
+
+James: looks into Alec’s ear,”WOW that’s not good.”
+
+James: “you definitely have an ear infection”
+
+
+James: selects diagnosis field and types in ear infection.
+
+
+James: opens medications page selects add new medication a modal appears, James selects  a antibiotic from dropdown menu and the rest auto fills in for a standard does. James doubles the dose because the infection is so bad! And presses submit and print. Then James repeats for a painkiller.
+
+James: “I have prescribed a double dose of antibiotics and a strong painkiller. Take them as directed” 
+
+Alec:” Thank you”
+
+
+James: “You should be okay in a week if not give me a call.”
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Pages we need to have working
+Act 1
+Login, Patient search box, Patient selection, Patient contact update.
+
+
+Act 2 
+Login, Patient search box, Patient selection, visit summary, vitals, add vital.
+
+Act 3
+Login, Patient search box, Patient selection, visit summary, add and view diagnosis dr notes,  medications, add medication.
