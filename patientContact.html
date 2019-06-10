@@ -1,4 +1,20 @@
-<!DOCTYPE html>
+<?php
+	session_start();
+	require_once 'DBConnection.php';
+	$patientid = $_SESSION['activePatientID'];
+	
+	$sql = 'SELECT * FROM patient_contact
+			WHERE patient_id = :patient_id';
+			
+	$statement = $db->prepare($sql);
+	
+	$statement->bindValue(':patient_id', $patient_id);
+	
+	$statement->execute();
+	
+	$statement->closeCursor();
+
+?>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
