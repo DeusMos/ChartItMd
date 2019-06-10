@@ -7,29 +7,46 @@
  */
 session_start();
 require_once 'DBConnection.php';
+$patientId = $_SESSION['activePatientID'];
+$userId = $_SESSION['user_id'];
+$statement = $db->prepare("SELECT text FROM `doc_notes` where  patient_id = :patient_id ORDER BY doc_note_datetime DESC Limit 1");
+
+$statement->bindValue(':patient_id', $patientId);
+
+$statement->execute();
+
+
+$text = $statement->fetchAll();
+$statement->closeCursor();
+
+
 ?>
 
-<?php include"banner.html";?>
+<?php include "banner.html"; ?>
 
 <html>
 <head>
 
     <title>Doctor's Notes</title>
+
 </head>
 <body>
 <div class="row">
 
-    <?php include"navbar.php";?>
+    <?php include "navbar.php"; ?>
 
     <div class="col-5">
         <div class="header">
             <div style="display:inline-block;"><?php include 'PatientIDBar.php'; ?></div>
         </div>
         <div>
-            WIP!
+            <form action="InsertDocNote.php" method="post">
+
+                <textarea name="textarea" rows="30" cols="50"><?php echo($text[0][0]); ?></textarea>
+                <input type="submit" name="submit">
+            </form>
         </div>
     </div>
-
 
 
 </div>
